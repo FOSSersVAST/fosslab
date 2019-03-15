@@ -22,3 +22,27 @@ GNU Wget is a computer program that retrieves content from web servers. Its name
 ```bash
 wget http://example.com
 ```
+
+## ssh
+
+Secure Shell (ssh) is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line login and remote command execution, but any network service can be secured with SSH.
+
+Install SSH Server & SSH Client
+
+```bash
+sudo apt install openssh-server ssh
+```
+
+Find the IP address of the remote system you want to access. You can do this by going to the remote system and doing this in terminal :
+
+```bash
+ifconfig | grep "inet addr"
+```
+
+You'll see the IP address in the output :
+
+```
+inet addr:10.1.3.19
+```
+
+In the above output, `10.1.3.19` is the IP address of the system.
