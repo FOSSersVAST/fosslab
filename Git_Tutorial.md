@@ -165,4 +165,15 @@ To create **PR**, click on 'New Pull Request' in th 'Pull Request' Tab in your r
 
 Now you have made your Pull Request or simply your **PR** !!
 
-## 
+#### 5. Pulling from Upstream
+
+Upstream refers to the main repository from where you forked. You need to mention the URL of the main repo to pull changes from it :
+
+```bash
+git remote add upstream https://github.com/example/examplerepo.git
+```
+
+Now you can pull changes from the `master` branch of the main repository :
+```bash
+git pull upstream master
+```
