@@ -17,7 +17,7 @@ figlet "Hello World!"
 ```
 You can customize the font by using ``-f`` parameter.
 ```bash
-figlet -f 3d "Awesome"
+figlet -f min "Awesome"
 ```
 
 You can also extend the customization by many parameters. For knowing more, do
@@ -26,6 +26,13 @@ man figlet
 ```
 
 _**BONUS**_ : Add ``lolcat`` and make it colourful!!
+To use lolcat, you need to install it by
+```bash
+gem install lolcat
+```
+
 ```bash
 figlet -f 3d "This lit!!" | lolcat
 ```
+The 3d.flf file is not installed predefault and can be used by copying into into ``\root\usr\share\figlet\`` folder.
+Source to 3d.flf and other amazing custom figlet fonts : https://github.com/xero/figlet-fonts (Shoutout to xero, an amazing ricer)
